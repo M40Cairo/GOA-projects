@@ -142,6 +142,13 @@ forward(70)
 
 #end of right window
 
+penup()
+
+left(90)
+forward(300)
+
+
+
 
 
 

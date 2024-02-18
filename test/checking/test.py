@@ -1,0 +1,5 @@
+number_1 = int(input("your_number1:" ))
+number_2 = int(input("your_number2:"))
+number_3 = int(input("your_number3: "))
+result= (number_1 + number_2 + number_3)
+print(result)
