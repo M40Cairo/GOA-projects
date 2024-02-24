@@ -1,151 +1,65 @@
-from turtle import *
+import turtle
 
+# Set up the screen
+screen = turtle.Screen()
+screen.setup(width=400, height=400)
+screen.bgcolor("skyblue")
 
-#drawing a square 
+# Create a turtle
+t = turtle.Turtle()
 
-width(10)
-speed(30)
-
-color("green")
-forward(200)
-left(90)
-
-forward(200)
-left(90)
-
-forward(200)
-left(90)
-
-forward(200)
-left(90)
-
-forward(50)
-left(90) 
-
-#end of square
-
-#door 
-
-color("purple")
+# Draw the castle walls
+color("gray")
 begin_fill()
-forward(100)
-right(90)
-
-forward(70)
-right(90)
-
-forward(100)
-left(90)
+for _ in range(4):
+    forward(100)
+    left(90)
 end_fill()
 
-#end of door
-
-#roof
+# Draw the roof
 penup()
-goto(200, 200)
-pendown()
-color("yellow")
-begin_fill()
-left(120)
-forward(200)
-
-left(120)
-forward(200)
-end_fill()
-
-#end of roof 
-
-#start of door handle
-
-penup()
-goto(50, 50)
+goto(-50, 0)
 pendown()
 color("red")
-left(120)
-forward(10)
+begin_fill()
+for _ in range(3):
+    forward(200)
+    left(120)
+end_fill()
 
- #end of door handle
-
-#start of left window
-
+# Draw the door
+penup()
+goto(25, -100)
+pendown()
 color("brown")
-penup()
+begin_fill()
+for _ in range(2):
+    forward(50)
+    left(90)
+    forward(100)
+    left(90)
+end_fill()
 
-goto(60,110)
+# Draw windows
+def draw_window(x, y):
+    penup()
+    goto(x, y)
+    pendown()
+    color("cyan")
+    begin_fill()
+    for _ in range(4):
+        forward(30)
+        left(90)
+    end_fill()
 
-width(3)
+draw_window(-30, 0)
+draw_window(40, 0)
 
-pendown()
+# Hide the turtle
+hideturtle()
 
-left(90)
-forward(70)
-
-left(90)
-forward(50)
-
-left(90)
-forward(70)
-
-left(90)
-forward(50)
-
-left(90)
-forward(35)
-
-left(90)
-forward(50)
-
-left(90)
-forward(35)
-
-left(90)
-forward(25)
-
-left(90)
-forward(70)
-
-#end of left window
-
-#start of right window
-
-penup()
-
-goto(180,110)
-
-pendown()
-
-forward(70)
-
-left(90)
-forward(50)
-
-left(90)
-forward(70)
-
-left(90)
-forward(50)
-
-left(90)
-forward(35)
-
-left(90)
-forward(50)
-
-left(90)
-forward(35)
-
-left(90)
-forward(25)
-
-left(90)
-forward(70)
-
-#end of right window
-
-penup()
-
-left(90)
-forward(300)
+# Keep the window open
+screen.mainloop()
 
 
 
