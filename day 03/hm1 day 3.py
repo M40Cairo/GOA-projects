@@ -1,7 +1,7 @@
-father_name= "თემო "
+father_name= "გიო "
 
-mother_name= "მარიკა "
+mother_name= "ანა "
 
-sistername_name= "კატო "
+brother_name= "დემეტრე "
 
-print(father_name + mother_name + sistername_name)
+print(father_name + mother_name + brother_name)

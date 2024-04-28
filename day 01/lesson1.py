@@ -1,12 +1,13 @@
-name = "ugo"
+name = "saba"
 
-surname= "cxadadze"
+surname= "shalikashvili"
 
-height= 161
+height= 173
 
-age= 9
+age= 15
 
 interest= "programming"
+sport = 'frenburti'
 
 print("chemi saxelia" + " " + (name) + ", " + "gvari" + " " + (surname) + ", " + "simagleshi var" + " " + str(height) + ", " + "var" + " " + str(age) + " " + "wlis" + ", " + "momwons" + " " + (sport) + ", " + "dainteresebuli var" + " " + (interest) + "-it")
 
